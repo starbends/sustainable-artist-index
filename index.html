@@ -1,0 +1,629 @@
+<!-- current problems: 
+none
+
+CREATE:
+a problem report page which then sends that problem report to my email; eg link doesn't work etc
+create a playlist page full of playlists including songs from the artists in the genre tables
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist List Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- nav bar for site exploration -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html">Artist List</a> <!-- Link to homepage (self) -->
+      <a href="playlist.html">Playlist</a>
+      <a href="mission.html">Mission Statement</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+ <!-- main contents -->
+ <div class="container">
+  <h1>Artist List</h1>
+
+  <!-- grid layout with expandable tables -->
+  <div class="grid-container">
+
+
+      <!-- 
+    
+    
+      NEW POP GENRE TABLE 
+    
+      -->
+
+      <div class="table">
+        <div class="table-header">New Pop</div>
+
+      <!-- table rows and dropdown content -->
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Boulet Brothers</a>
+        <div class="dropdown-content">
+          <p>Electro-Pop, Alt-Rock;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/1inZg5sW4gKGyLnbKPvrd4?si=_A73MkauTQ-fu8-6BL8E-A" target="_blank" style="color: #cc0000">Spotify</a> 
+            <a href="https://bouletbrothersdragula.com/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Lemon</a>
+        <div class="dropdown-content">
+          <p>Drag-Pop, Hip-Hop;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/6vNrD9n6lmYcHQ9269HH2B?si=7PCXEGD6QLGd4SAlD5ExoA" target="_blank" style="color: #cc0000">Spotify</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Nemo (CH)</a>
+        <div class="dropdown-content">
+          <p>Electro-Pop, Indie-Pop, Pop-Rap;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/1KbDYbNErlTGfWPENELJgM?si=Np5mb2MhQliBnEZGQoOEKA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://nemothings.com/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Priyanka</a>
+        <div class="dropdown-content">
+          <p>Dance Pop, Future House;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/1RSalo3q49NotNwKB2jtjO?si=NPiRBX1DRya7Y4QdRq1qAA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://www.thequeenpriyanka.com/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Rahim Redcar</a>
+        <div class="dropdown-content">
+          <p>Synthpop, Art-Pop, New Wave, Outsider House;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/4fWWr45mgLHAV8DPJR3vdW?si=-DZLP9WITPqiR23t2zN2UA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://christineandthequeens.com/signup/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Soroya Marchelle</a>
+        <div class="dropdown-content">
+          <p>Glam Pop, Electro-Pop, Soul-Electronica;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/6Veb5KVVuU7fzIutaxtIgt?si=IF4tLE-4RweOgzzUdoSxVA" target="_blank" style="color: #cc0000">Spotify</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Tom Rasmussen</a>
+        <div class="dropdown-content">
+          <p>Synthpop, Dance-Pop, House;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/1FWk2wt5rW1viTKVsPd4Gf?si=2uUai2dvQJKWoKMmoL0_gA" target="_blank" style="color: #cc0000">Spotify</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Wheatus</a>
+        <div class="dropdown-content">
+          <p>Power Pop, Alt-Rock, Slacker Rock, Pop-Punk;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/4mYFgEjpQT4IKOrjOUKyXu?si=lXoXK-zqRxWMdIvtNbKhSA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://wheatus.com/home" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://wheatus.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid-->
+    </div>
+<!-- END OF TABLE -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- 
+    
+    
+      OLD POP GENRE TABLE 
+    
+      -->
+
+      
+
+
+        <!-- the below div closes this table-->
+        <!--</div>-->
+
+
+        <!-- END OF TABLE -->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- 
+    
+    
+      INDIE GENRE TABLE 
+    
+      -->
+
+    <div class="table">
+      <div class="table-header">Indie</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Cyberbully Mom Club</a>
+        <div class="dropdown-content">
+          <p>Indie Folk, Bedroom Pop, Twee Pop;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/5IZVaIBkyx1ivCXLfpeJXT?si=hOmRSUQeSDa3s9L_MTKEGA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://open.spotify.com/artist/3kM8ISONix9hwTs5iSOO1f?si=daIXzwicTbeC4vCgGZj3ng" target="_blank" style="color: #cc0000">Spotify Alt</a>
+            <a href="https://cbmcband.bandcamp.com/music" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Flatsound</a>
+        <div class="dropdown-content">
+          <p>Indie Folk, Slowcore, Slacker Rock, Bedroom-Pop, Ambient, Noise;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/4ze1UwMqtSlhTgnyk8LrW3?si=GnB-n6OlTAOKX5x3aKS2zQ" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://www.flatsound.org/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://flatsound.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Jordaan Mason</a>
+        <div class="dropdown-content">
+          <p>Indie Folk, Slacker Rock, Anti-Folk, Slowcore;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/5zInXkhCwoT9HGWgeKjKS6?si=8hEM2h6vQFKG9SMrk7YCGw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://open.spotify.com/artist/5EQ6WS0sO77AIhthug6S0U?si=6fUcbKUDRuCrmsKxICgW0Q" target="_blank" style="color: #cc0000">Spotify 2</a>
+            <a href="https://jordaanmason.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Nana Grizol</a>
+        <div class="dropdown-content">
+          <p>Indie Rock, Folk-Punk, Slacker Rock, Anti-Folk;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/7FPO7WTShHCXnmVv7lhhZM?si=-78vdK2aQbWgooGj5-d8hw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://www.orangetwin.com/nana-grizol" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://nanagrizol.bandcamp.com/music" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Post Post</a>
+        <div class="dropdown-content">
+          <p>Indie Rock, Indie Pop, Soft Rock;</p>
+          <p>
+            <a href="https://www.awkwardcore.com/postpost.html" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Starbends</a>
+        <div class="dropdown-content">
+          <p>Noise, Ambient, Indie Rock, Folk-Pop, Slacker Rock, Depressive, Slowcore;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/6SiKAef5YjZiQwuyDp5VeQ?si=NLJEo34LQC-ceb7i7aAlMA" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://starbends.co.uk/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://starbends.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Wishing</a>
+        <div class="dropdown-content">
+          <p>Bedroom-Pop, Ambient Pop, Hypnagogic Pop, Melodic Rock, Slowcore;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/4SPlQqq2yxd4ynKRnkWqy7?si=RkHYYQA9RhOcCZtiG97kNg" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://wishing.love/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://wishing.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+    </div>
+
+<!-- END OF TABLE -->
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- 
+    
+    
+      HIPHOP GENRE TABLE 
+    
+      -->
+
+    <div class="table">
+      <div class="table-header">Hip-Hop</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Aja</a>
+        <div class="dropdown-content">
+          <p>Pop-Rap, Hip-Hop;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/0fWt4FY87imqsBJpt2QVL0?si=ZmRTLPj9TzCMlyWyIuxCJQ" target="_blank" style="color: #cc0000">Spotify</a>
+          </p>
+        </div>
+      </div>
+
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+    </div>
+
+    <!-- END OF TABLE -->
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Table 4 -->
+    <div class="table">
+      <div class="table-header">EDM [Dance/Disco]</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">RealXMan</a>
+        <div class="dropdown-content">
+          <p>House, Popstep, Queer Rock, Glam Pop;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/14SRuLzqEEU33ZMszyceu1?si=aaqneOAETSeX8nEirlQLbQ" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://realxman.com/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Virgin X</a>
+        <div class="dropdown-content">
+          <p>Future House, Future Bass, Electronica;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/5vJMzYaXGLwSdoywJXofbA?si=A21IPgvsTL6QiZwHcSoayw" target="_blank" style="color: #cc0000">Spotify</a>
+          </p>
+        </div>
+      </div>
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+  </div>
+
+  <!-- END OF TABLE -->
+
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- 
+    
+    
+      EDM/HYPERPOP/BASSLINE GENRE TABLE 
+    
+      -->
+
+    <div class="table">
+      <div class="table-header">EDM [Tracker, IDM]</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Binärpilot</a>
+        <div class="dropdown-content">
+          <p>IDM, Chiptune, Electroclash, Techno;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/7h7YbSISHutpSg3XJt831S?si=621GC-sIT7KPmLmJ__O9Cw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://binaerpilot.neocities.org/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://binaerpilot.bandcamp.com/music" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Lynks</a>
+        <div class="dropdown-content">
+          <p>Electroclash, Electro-Pop, Indietronica;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/44tV2d4RDeMsS2sLOdcXHD?si=FqneSeGqS8WJM1bRl4Q0Aw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://www.lynkslynkslynks.net/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://lynkslynkslynks.bandcamp.com" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Omniq</a>
+        <div class="dropdown-content">
+          <p>Hyperpop, Electro-Pop, Dance-Pop, Industrial Rock;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/7BrNjEaiiQb7P8fPh1wxIp?si=eH7eooe4SuSTytda9DYZfw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://omniq.carrd.co/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://omniq.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+  </div>
+
+  <!-- END OF TABLE -->
+
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- 
+    
+    
+      ELECTROCLASH GENRE TABLE 
+    
+      -->
+
+
+
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+ <!-- </div>-->
+
+  <!-- END OF TABLE -->
+
+
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+      <!-- 
+    
+    
+      FOLK ANTI FOLK GENRE TABLE 
+    
+      -->
+
+
+    <div class="table">
+      <div class="table-header">Folk/Anti-Folk</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Foot Ox</a>
+        <div class="dropdown-content">
+          <p>Indie Folk, Twee Pop, Anti-Folk;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/4atG4dpAmj30iXyKHeEPVY?si=ooxsyekPTyet3M8RZvSn3Q" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://footox.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Heather Maloney</a>
+        <div class="dropdown-content">
+          <p>Indie Folk, Acoustic Folk, Indie-Rock;</p>
+          <p>
+            <a href="https://open.spotify.com/artist/3epjAWvLxTBlI9FgGCUNID?si=Spqk2mK7QXmN1OURNjy2Kw" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://www.heathermaloney.com/" target="_blank" style="color: #cc0000">Website</a>
+            <a href="https://heathermaloneymusic.bandcamp.com" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+  </div>
+
+
+<!-- END OF TABLE -->
+
+  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+      <!-- 
+    
+    
+      R+B GENRE TABLE 
+    
+      -->
+
+
+
+<!-- add more rows here, the div below closes this table -- two divs for closing one artist, three for closing the table grid--> 
+  <!--</div>-->
+
+<!-- END OF TABLE -->
+ <!------------------------------------------------------------------------------->
+
+
+
+
+      <!-- 
+    
+    
+      COUNTRY GENRE TABLE 
+    
+      -->
+
+
+
+        <!-- additional rows can go here; div below closes the table -->
+      <!--</div>-->
+
+<!-- END OF TABLE -->
+ <!------------------------------------------------------------------------------->
+
+
+      
+      <!-- 
+    
+    
+      ROCK GENRE TABLE 
+    
+      -->
+
+
+        <!--div below closes the table-->
+        <!--</div>-->
+
+
+<!-- END OF TABLE -->
+<!------------------------------------------------------------------------------->
+
+              
+      <!-- 
+    
+    
+      METAL GENRE TABLE 
+    
+      -->
+
+
+
+        <!--div below closes this table-->
+        <!--</div>-->
+
+        <!-- END OF TABLE -->
+<!------------------------------------------------------------------------------->
+
+              
+      <!-- 
+    
+    
+      PUNK GENRE TABLE 
+    
+      -->
+
+
+
+          <!-- div below closes current table-->
+          <!--</div>-->
+
+                  <!-- END OF TABLE -->
+<!------------------------------------------------------------------------------->
+
+
+              
+      <!-- 
+    
+    
+      EMO GENRE TABLE 
+    
+      -->
+
+      <div class="table">
+        <div class="table-header">Midwest Emo/Mathrock</div>
+  
+        <div class="table-row">
+          <a href="#" onclick="toggleDropdown(this); return false;">Little Big League</a>
+          <div class="dropdown-content">
+            <p>Midwest Emo, Indie Rock, Melodic Rock;</p>
+            <p>
+              <a href="https://open.spotify.com/artist/0gqljtE0ZzPxEpjmHeNvTx?si=7A6-nzeeRRalFklfdwsi0Q" target="_blank" style="color: #cc0000">Spotify</a>
+              <a href="http://michellezauner.com/" target="_blank" style="color: #cc0000">Website</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <a href="#" onclick="toggleDropdown(this); return false;">Noise Beneath The Floor</a>
+          <div class="dropdown-content">
+            <p>Midwest Emo, Alternative Rock, Melodic Pop, Dream-Pop, Indie Rock;</p>
+            <p>
+              <a href="https://open.spotify.com/artist/3OsFknIFmf02EgHlMo5iES?si=9Tr3vRMRTm6LBUH9q-jxnA" target="_blank" style="color: #cc0000">Spotify</a>
+              <a href="https://noisebeneaththefloor.bandcamp.com/" target="_blank" style="color: #cc0000">Bandcamp</a>
+            </p>
+          </div>
+        </div>
+
+        
+
+
+<!--NEW TABLES GO BELOW THIS:-->
+
+
+
+      <!--Div below closes all tables-->
+  </div>
+
+ <!--div below closes the html segment--> 
+</div>
+
+<!-- END OF ALL TABLES -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+  <!-- javascript toggle func -->
+  <script>
+    // js toggle dropdown contents
+    function toggleDropdown(link) {
+      const row = link.closest('.table-row');
+      row.classList.toggle('active'); //toggle the active class to show/hide the dropdown
+    }
+
+    function toggleGenre(link) {
+  // Toggle the 'active' class on the genre title
+  link.classList.toggle('active');
+  
+  // Find the associated artist list for this genre and toggle its display
+  const artistList = link.nextElementSibling;
+  artistList.style.display = artistList.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+<!-- Stars container -->
+<div class="stars">
+  <!-- Add more stars here with different positions and sizes -->
+</div>
+
+<!-- Scripts -->
+<script src="stars.js"></script>
+</body>
+</body>
+</html>
+
+
+<!--
+  --how the table should be formatted; this is a comment, remove it.--
+
+      <div class="table">
+      <div class="table-header">example table 2</div>
+
+      <div class="table-row">
+        <a href="#" onclick="toggleDropdown(this); return false;">Artist Name 2</a>
+        <div class="dropdown-content">
+          <p>SUBGENRE HERE;</p>
+          <p>
+            <a href="https://example.com/" target="_blank" style="color: #cc0000">Spotify</a>
+            <a href="https://example.com/" target="_blank" style="color: #cc0000">Website</a>
+          </p>
+        </div>
+      </div>
+
+      --div below closes the table; this is a comment, remove it.--
+    </div>
+-->
