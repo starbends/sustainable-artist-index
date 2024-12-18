@@ -6,7 +6,7 @@ html, body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #0b0d17, #1c1f2e, #2b2e45);
   color: #e0e0e0; /* Softer white for text to reduce eye strain */
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   z-index: 0; /* Keep background behind stars */
 }
